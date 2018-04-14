@@ -16,34 +16,6 @@ This API Client supports SportMonks v2.0.
 
 ## Configuration
 
-``` php
-// Bootstrap
-require 'vendor/autoload.php';
-
-use SportMonks\API\HTTPClient as SportMonksAPI;
-use SportMonks\API\Utilities\Auth;
-
-// Default values. Can be initialized without arguments.
-$scheme = 'https';
-$hostname = 'sportmonks.com';
-$subDomain = 'soccer';
-$port = 443;
-
-// Auth.
-$token = 'open sesame';
-
-$client = new SportMonksAPI();
-// or
-//$client = new SportMonksAPI($scheme, $hostname, $subDomain, $port);
-
-// Set auth.
-$client->setAuth(Auth::BASIC, [
-    'token' => $token
-]);
-```
-
-## Config
-
 In your `config/app.php` add `'SportMonksAPI\Soccer\SportMonksSoccerApiServiceProvider'` to the end of the `$providers` array
 
 ```php
