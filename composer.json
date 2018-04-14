@@ -1,6 +1,5 @@
 {
     "name": "mohammad-mazraeshahi/sportmonks-soccer-api",
-    "type": "metapackage",
     "license": "MIT",
 	"description": "Get data from Sportmonks soccer API",
     "authors": [
@@ -9,17 +8,16 @@
             "email": "m.mazraeshahi@gmail.com"
         }
     ],
-    "require": {
-        "guzzlehttp/guzzle": "^6.3",
-        "Illuminate/Support" : "~5"
-    },
     "autoload": {
         "psr-4": {
             "SportMonksAPI\\Soccer\\": "src/"
         },
         "files":[
             "src/helpers.php"
-        ]
-
-	}
+        ]		
+	},
+	"require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "Illuminate/Support" : "~5"
+    }
 }
