@@ -19,5 +19,16 @@
 	"require": {
         "guzzlehttp/guzzle": "^6.3",
         "Illuminate/Support" : "~5"
-    }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "SportMonksAPI\\Soccer\\SportMonksSoccerApiServiceProvider"
+            ],
+            "aliases":{
+                "SportMonksSoccerApi" : "SportMonksAPI\\Soccer\\APIFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
 }
