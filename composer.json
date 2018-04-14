@@ -1,0 +1,26 @@
+{
+    "name": "limbo/sportmonks-soccer-api",
+    "type": "metapackage",
+    "license": "MIT",
+	"description": "Get data from Sportmonks soccer API",
+    "authors": [
+        {
+            "name": "Mohammad Mazraeshahi",
+            "email": "m.mazraeshahi@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+		"Illuminate/Support" : "~5"
+    },
+    "autoload": {
+        "psr-4": {
+            "SportMonksAPI\\Soccer\\": "src/"
+        },
+        "files":[
+            "src/helpers.php"
+        ]
+
+	}
+}
