@@ -1,5 +1,5 @@
 {
-    "name": "limbo/sportmonks-soccer-api",
+    "name": "mohammad-mazraeshahi/sportmonks-soccer-api",
     "type": "metapackage",
     "license": "MIT",
 	"description": "Get data from Sportmonks soccer API",
