@@ -9,11 +9,11 @@ class SportMonksSoccerApi
 {
     public function get()
     {
-        $scheme = config('main.scheme');
-        $hostname = config('main.hostname');
-        $subDomain = config('main.subDomain');
-        $port = config('main.port');
-        $token = config('main.token');
+        $scheme = config('sportMonks.scheme');
+        $hostname = config('sportMonks.hostname');
+        $subDomain = config('sportMonks.subDomain');
+        $port = config('sportMonks.port');
+        $token = config('sportMonks.token');
 
         $client = new HTTPClient($scheme,$hostname,$subDomain,$port);
         $client->setAuth(Auth::BASIC, [
