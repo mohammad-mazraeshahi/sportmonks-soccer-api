@@ -13,7 +13,7 @@ class SportMonksSoccerApiServiceProvider extends ServiceProvider
             return new SportMonksSoccerApi;
         });
 
-        $this->mergeConfigFrom(__DIR__.'/config/main.php' , 'main');
+        $this->mergeConfigFrom(__DIR__.'/config/sportMonks.php' , 'sportMonks');
     }
 	
 	public function boot()
