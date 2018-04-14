@@ -35,4 +35,10 @@ In your `config/app.php` add `'SportMonksAPI\Soccer\SportMonksSoccerApiServicePr
 ]
 ```
 
-And add Token in config/main.php in vendor
+Copy the package config to your local config with the publish command:
+
+```shell
+php artisan vendor:publish --provider="SportMonksAPI\Soccer\SportMonksSoccerApiServiceProvider"
+```
+
+And add Token in config/sportMonks.php
